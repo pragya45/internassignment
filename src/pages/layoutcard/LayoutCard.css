@@ -1,0 +1,128 @@
+/* Layout Container */
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #696969; /* Light gray color */
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+/* Ellipse Background Image */
+.ellipse-background {
+  position: absolute;
+  width: 900px;
+  height: 800px;
+  bottom: -90px;
+  left: -150px;
+  background: url("../../../public/assets/images/maskgroup.png") no-repeat;
+  background-size: contain;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+/* Back Button */
+.back-button {
+  align-self: flex-start;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+/* Title */
+.layout-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+}
+
+/* Cards Layout */
+.cards-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+/* Top Card */
+.top-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Cards Row */
+.cards-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Individual Card Styling */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Flag Image */
+.flag-image {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Text Styling */
+.country {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.type {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.company,
+.address {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #d3d3d3;
+}
